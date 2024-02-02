@@ -1,0 +1,10 @@
+^D:\DEV\CMAKETUTORIAL\CMAKE-3.28.1-TUTORIAL-SOURCE\CMAKE-3.28.1-TUTORIAL-SOURCE\STEP2\MATHFUNCTIONS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step2 -BD:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step2/Step2_build --check-stamp-file D:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step2/Step2_build/MathFunctions/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

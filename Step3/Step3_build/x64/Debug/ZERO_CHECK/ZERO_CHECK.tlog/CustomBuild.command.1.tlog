@@ -1,0 +1,10 @@
+^D:\DEV\CMAKETUTORIAL\CMAKE-3.28.1-TUTORIAL-SOURCE\CMAKE-3.28.1-TUTORIAL-SOURCE\STEP3\STEP3_BUILD\CMAKEFILES\304E89C257B0981B1993325AD227C983\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step3 -BD:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step3/Step3_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/dev/CMakeTutorial/cmake-3.28.1-tutorial-source/cmake-3.28.1-tutorial-source/Step3/Step3_build/Tutorial.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
